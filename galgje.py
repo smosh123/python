@@ -118,22 +118,22 @@ if __name__ == '__main__':
                     print('_', end = ' ')
 
 
-
-                    
-                    
-
+        if (Counter(letterGuessed) == Counter(word)): 
+            print() 
+            print('Gefeliciteerd, You won!') 
 
   
-            if (Counter(letterGuessed) == Counter(word)): 
+        else:
+            if wrong == 9: 
                 print() 
-                print('Gefeliciteerd, You won!') 
-                break
+                print('Game Over..') 
+                print('het woord was {}'.format(word))
+                    
+                    
+
+
   
-            else:
-                if wrong == 9: 
-                    print() 
-                    print('Game Over..') 
-                    print('het woord was {}'.format(word))
+
             
          
 
