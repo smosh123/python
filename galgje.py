@@ -120,14 +120,17 @@ if __name__ == '__main__':
 
         if (Counter(letterGuessed) == Counter(word)): 
             print() 
-            print('Gefeliciteerd, You won!') 
+            print('Gefeliciteerd, You won!')
+            
+        if wrong == 9: 
+            print() 
+            print('Game Over..') 
+            print('het woord was {}'.format(word))
 
-  
-        else:
-            if wrong == 9: 
-                print() 
-                print('Game Over..') 
-                print('het woord was {}'.format(word))
+        if chances == 0: 
+            print() 
+            print('Game Over..') 
+            print('het woord was {}'.format(word))
                     
                     
 
