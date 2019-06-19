@@ -2,10 +2,10 @@ import random
 import time
 from collections import Counter 
   
-woorden = 'coderclass tape telefoon computer schrift muis papier oordoppen appel stoel toetsenbord ninja sticker bord eten'
-  
-woorden = woorden.split(' ') 
-word = random.choice(woorden)
+words = "hangman"
+
+
+words = random.choice = words
 
 def tekengalg():
     if wrong == 1:
@@ -69,7 +69,7 @@ def tekengalg():
 if __name__ == '__main__': 
     print(' ') 
       
-    for i in word: 
+    for i in words: 
         print('_', end = ' ')         
     print() 
   
@@ -98,7 +98,7 @@ if __name__ == '__main__':
             elif guess in letterGuessed: 
                 print('Je hebt die letter al geraden') 
                 continue
-            if not guess in word:
+            if not guess in words:
                 time.sleep(0.02)
                 wrong += 1
                 tekengalg()
@@ -107,10 +107,10 @@ if __name__ == '__main__':
             
                 
   
-            if guess in word: 
+            if guess in words: 
                 letterGuessed += guess 
   
-            for char in word: 
+            for char in words: 
                 if char in letterGuessed: 
                     print(char, end = ' ') 
                     correct += 1
@@ -118,19 +118,19 @@ if __name__ == '__main__':
                     print('_', end = ' ')
 
 
-        if (Counter(letterGuessed) == Counter(word)): 
+        if (Counter(letterGuessed) == Counter(words)): 
             print() 
             print('Gefeliciteerd, You won!')
             
-        if wrong == 9: 
+        elif wrong == 9: 
             print() 
             print('Game Over..') 
-            print('het woord was {}'.format(word))
+            print('het woord was {}'.format(words))
 
-        if chances == 0: 
+        elif chances == 0: 
             print() 
             print('Game Over..') 
-            print('het woord was {}'.format(word))
+            print('het woord was {}'.format(words))
                     
                     
 
