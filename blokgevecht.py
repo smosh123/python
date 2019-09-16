@@ -1,7 +1,6 @@
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 import time
-
 time.sleep(60)
 points=0
 hits = mc.events.pollBlockHits()

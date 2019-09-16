@@ -4,11 +4,12 @@ mc = minecraft.Minecraft.create()
 import time
 
 while True:
-pos = mc.player.getPos()
-x = pos.x
-y = pos.y
-z = pos.z
+    pos = mc.player.getPos()
+    x = pos.x
+    y = pos.y
+    z = pos.z
 
-block = 11
+    block = 38
 
-mc.setBlock(x, y, z, block)
+    mc.setBlock(x, y, z, block)
+    time.sleep(0.2)
